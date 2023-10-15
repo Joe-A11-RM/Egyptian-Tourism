@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tourism</title>
+    <style type="text/css">
+        body {
+            background-image: url(../Egypt/image/karnak2.jpg);
+        }
+    </style>
+    <link rel="icon" type="image/png" href="image/bird.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cairomuseums.css">
+</head>
+
+<header>
+    <!--upper-->
+    <div class="container">
+        <div class="row">
+            <div id="god">
+                <div id="leftgod">
+                    <img src="image/god left.png">
+                </div>
+                <div id="rightgod">
+                    <img src="image/god right.png">
+                </div>
+                <div id="egypt">
+                    <img src="image/egypt.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--upper-->
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="museum.html">متاحف</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="historicplace.html">مواقع أثرية</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="kings.html">الملوك</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--nav-->
+</header>
+
+<body>
+    <div id="banner">
+        <p id="bannertext">عدد نتائج البحث(٦)</p>
+        <div class="container">
+            <div id="select1">
+                <div class="row">
+                    <div id="select" class="col-lg-12">
+                        <select onchange="la(this.value)" class="form-select" aria-label="Default select example">
+                    <option id="option" selected>---- إختر المحافظة ----</option>
+                    <option id="option1" value="cairomuseums.html">القاهرة</option>
+                    <option id="option1" value="gizamuseums.html">الجيزة</option>
+                    <option id="option1" value="luxormuseums.html">الأقصر</option>
+                  </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <article class="offset-lg-1 col-lg-3 col-md-4 col-sm-12">
+                <div id="mathf">
+                    <a href="elmathfelmasry.html">
+                        <img id="img" src="image/egyptianmuseum.jpg">
+                    </a>
+                </div>
+                <p id="title">المتحف المصري</p>
+            </article>
+            <article class="offset-lg-1 col-lg-3 col-md-4 col-sm-12">
+                <div id="islam">
+                    <a href="islamicmuseum.html">
+                        <img id="img" src="image/islamicmuseum.jpg">
+                    </a>
+                </div>
+                <p id="title">المتحف الإسلامي</p>
+            </article>
+            <article class="offset-lg-1 col-lg-3 col-md-4 col-sm-12">
+                <div id="civil">
+                    <a href="civlizationmuseum.html">
+                        <img id="img" src="image/civlization.jpg">
+                    </a>
+                </div>
+                <p id="title">متحف الحضارة</p>
+            </article>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <article class="offset-lg-1 col-lg-3 col-md-4 col-sm-12">
+                <div id="mrkbat">
+                    <a href="mrkbatmuseum.html">
+                        <img id="img" src="image/elmrkbat.jpg">
+                    </a>
+                </div>
+                <p id="title">متحف المركبات</p>
+            </article>
+            <article class="offset-lg-1 col-lg-3 col-md-4  col-sm-12">
+                <div id="coptic">
+                    <a href="copticmuseum.html">
+                        <img id="img" src="image/copticmuseum.jpg">
+                    </a>
+                </div>
+                <p id="title">المتحف القبطي</p>
+            </article>
+            <article class="offset-lg-1 col-lg-3 col-md-4 col-sm-12 ">
+                <div id="naseg">
+
+                    <a href="nasegmuseum.html">
+                        <img id="img" src="image/elnaseg.jpg">
+                    </a>
+                </div>
+
+                <p id="title">متحف النسيج</p>
+
+            </article>
+        </div>
+    </div>
+
+
+    <div id="audio">
+        <audio loop autoplay>
+        <source src="image/Nightcore - Pharaoh Ramses II - Derek Fiechter.m4a">
+    </audio>
+    </div>
+
+    <div id="foot">
+
+        <p id="copy">جميع الحقوق محفوظة۲۰۲۱</p>
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+
+    <script src="js/owl.carousel.min.js "></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#leftgod ").addClass("animated ")
+        });
+        $(document).ready(function() {
+            $("#rightgod ").addClass("animated ")
+        });
+    </script>
+    <script>
+        function la(src) {
+            window.location = src;
+        }
+    </script>
+
+
+</body>
+
+</html>

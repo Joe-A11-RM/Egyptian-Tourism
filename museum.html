@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tourism</title>
+    <style type="text/css">
+        body {
+            background-image: url(../Egypt/image/karnak2.jpg);
+        }
+    </style>
+    <link rel="icon" type="image/png" href="image/bird.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/museumstyle.css">
+</head>
+
+<header>
+    <!--upper-->
+    <div class="container">
+        <div class="row">
+            <div id="god">
+                <div id="leftgod">
+                    <img src="image/god left.png">
+                </div>
+                <div id="rightgod">
+                    <img src="image/god right.png">
+                </div>
+                <div id="egypt">
+                    <img src="image/egypt.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--upper-->
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#">متاحف</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="historicplace.html">مواقع أثرية</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="kings.html">الملوك</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--nav-->
+</header>
+
+<body>
+    <div id="banner">
+        <p id="bannertext">المتاحف</p>
+    </div>
+    <div class="container-fluid">
+        <div id="back">
+            <div class="row">
+                <div id="firsttopic" class="col-lg-6 col-md-6 col-sm-12">
+                    <p>تحتل مصر مركز الصدارة في حيازتها للآثار التي تزدان بها عشرات المتاحف المتفردة التي تشكل ثروة ثقافية كبرى، جعلت منها مراكز للدراسات والتأمل في التراث والحضارة المصرية القديمة والحضارات العالمية والثقافة الحديثة والمعاصرة. وتشكل المتاحف
+                        عنصرا مهما من عناصر قوة مصر الناعمة على المستويات الفنية والتراثية والثقافية، مما يستلزم الارتقاء بمستوى الوعى بأهميتها والإقبال على زيارتها من قبل شرائح وفئات المجتمع المختلفة، فضلا عن تنشيط برامج الترويج لمقتنياتها وأهميتها الحضارية
+                        على الصعيدين العالمى والمحلى.
+                    </p>
+
+                </div>
+                <div id="select" class="col-lg-6 col-md-6 col-sm-12">
+                    <select onchange="la(this.value)" class="form-select" aria-label="Default select example">
+                        <option id="option" selected>---- إختر المحافظة ----</option>
+                        <option id="option1" value="cairomuseums.html">القاهرة</option>
+                        <option id="option1" value="gizamuseums.html">الجيزة</option>
+                        <option id="option1" value="luxormuseums.html">الأقصر</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="scene">
+        <div class="carousel">
+            <div class="carousel__cell">
+                <p>متحف الاقصر</p>
+            </div>
+            <div class="carousel__cell">
+                <p>متحف شرم الشيخ</p>
+            </div>
+            <div class="carousel__cell">
+                <p>المتحف الكبير</p>
+            </div>
+            <div class="carousel__cell">
+                <p>متحف مطروح</p>
+            </div>
+            <div class="carousel__cell">
+                <p>متحف قصر عابدين</p>
+            </div>
+            <div class="carousel__cell">
+                <p>متحف تل بسطا</p>
+            </div>
+            <div class="carousel__cell">
+                <p>متحف الحضارة</p>
+            </div>
+            <div class="carousel__cell">
+                <p>متحف النوبة</p>
+            </div>
+            <div class="carousel__cell">
+                <p>متحف مكتبة الإسكندرية</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-options">
+        <p>
+            <label>
+            Cells
+            <input class="cells-range" type="range" min="3" max="9" value="9" />
+          </label>
+        </p>
+        <p>
+            <button class="previous-button">السابق</button>
+            <button class="next-button">التالي</button>
+        </p>
+        <p id="move">
+            الشكل:
+            <label>
+            <input type="radio" name="orientation" value="horizontal" checked />
+            أفقي
+          </label>
+            <label>
+            <input type="radio" name="orientation" value="vertical" />
+            عمودي
+          </label>
+        </p>
+    </div>
+    <div id="audio">
+        <audio loop autoplay>
+        <source src="image/Nightcore - Pharaoh Ramses II - Derek Fiechter.m4a">
+    </audio>
+    </div>
+    <div id="foot">
+
+        <p id="copy">جميع الحقوق محفوظة۲۰۲۱</p>
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+
+    <script src="js/owl.carousel.min.js "></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#leftgod ").addClass("animated ")
+        });
+        $(document).ready(function() {
+            $("#rightgod ").addClass("animated ")
+        });
+    </script>
+    <script>
+        function la(src) {
+            window.location = src;
+        }
+    </script>
+    <script>
+        var carousel = document.querySelector('.carousel');
+        var cells = carousel.querySelectorAll('.carousel__cell');
+        var cellCount; // cellCount set from cells-range input value
+        var selectedIndex = 0;
+        var cellWidth = carousel.offsetWidth;
+        var cellHeight = carousel.offsetHeight;
+        var isHorizontal = true;
+        var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+        var radius, theta;
+        // console.log( cellWidth, cellHeight );
+
+        function rotateCarousel() {
+            var angle = theta * selectedIndex * -1;
+            carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
+                rotateFn + '(' + angle + 'deg)';
+        }
+
+        var prevButton = document.querySelector('.previous-button');
+        prevButton.addEventListener('click', function() {
+            selectedIndex--;
+            rotateCarousel();
+        });
+
+        var nextButton = document.querySelector('.next-button');
+        nextButton.addEventListener('click', function() {
+            selectedIndex++;
+            rotateCarousel();
+        });
+
+        var cellsRange = document.querySelector('.cells-range');
+        cellsRange.addEventListener('change', changeCarousel);
+        cellsRange.addEventListener('input', changeCarousel);
+
+
+
+        function changeCarousel() {
+            cellCount = cellsRange.value;
+            theta = 360 / cellCount;
+            var cellSize = isHorizontal ? cellWidth : cellHeight;
+            radius = Math.round((cellSize / 2) / Math.tan(Math.PI / cellCount));
+            for (var i = 0; i < cells.length; i++) {
+                var cell = cells[i];
+                if (i < cellCount) {
+                    // visible cell
+                    cell.style.opacity = 1;
+                    var cellAngle = theta * i;
+                    cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
+                } else {
+                    // hidden cell
+                    cell.style.opacity = 0;
+                    cell.style.transform = 'none';
+                }
+            }
+
+            rotateCarousel();
+        }
+
+        var orientationRadios = document.querySelectorAll('input[name="orientation"]');
+        (function() {
+            for (var i = 0; i < orientationRadios.length; i++) {
+                var radio = orientationRadios[i];
+                radio.addEventListener('change', onOrientationChange);
+            }
+        })();
+
+        function onOrientationChange() {
+            var checkedRadio = document.querySelector('input[name="orientation"]:checked');
+            isHorizontal = checkedRadio.value == 'horizontal';
+            rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+            changeCarousel();
+        }
+
+        // set initials
+        onOrientationChange();
+    </script>
+
+</body>
+
+</html>

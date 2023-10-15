@@ -1,0 +1,206 @@
+    #leftgod {
+        text-align: left;
+        margin-left: 30px;
+        margin-top: -50px;
+        transition-delay: 1s;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+    }
+    
+    #rightgod {
+        text-align: right;
+        margin-top: -198px;
+        margin-right: -5px;
+        transition-delay: 1s;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+    }
+    
+    body {
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    #egypt {
+        text-align: center;
+        margin-top: -158px;
+        margin-right: 28px;
+    }
+    
+    .animated {
+        transform: rotateY(150deg);
+    }
+    
+    .navbar {
+        background-image: url(../image/black\ wall.jpg);
+    }
+    
+    .navbar:hover {
+        background-image: url(../image/tomb1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .nav-link {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.1em;
+        font-weight: 1000;
+    }
+    
+    #firsttopic {
+        text-align: justify;
+        float: right;
+        max-width: 100%;
+        padding-top: 15px;
+        font-size: 1.1em;
+    }
+    
+    #back {
+        background-color: #f0eaea;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    #carousel {
+        max-width: 100%;
+        float: left;
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+    /* OUTER CONTAINER */
+    
+    .tcontainer {
+        width: 100%;
+        overflow: hidden;
+        border-top-color: black;
+        border-top-style: solid;
+        border-top-width: 5px;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        /* Hide scroll bar */
+    }
+    /* MIDDLE CONTAINER */
+    
+    .ticker-wrap {
+        width: 100%;
+        padding-left: 100%;
+        /* Push contents to right side of screen */
+        background-image: url(../image/Ancient\ wall.png)
+    }
+    /* INNER CONTAINER */
+    
+    @keyframes ticker {
+        0% {
+            transform: translate3d(-100%, 0, 0);
+        }
+        100% {
+            transform: translate3d(100%, 0, 0);
+        }
+    }
+    
+    .ticker-move {
+        /* Basically move items from right side of screen to left in infinite loop */
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 100%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: ticker;
+        animation-duration: 20s;
+    }
+    
+    .ticker-move:hover {
+        animation-play-state: paused;
+        /* Pause scroll on mouse hover */
+    }
+    /* ITEMS */
+    
+    .ticker-item {
+        display: inline-block;
+        /* Lay items in a horizontal line */
+        padding: 0 2rem;
+        font-weight: 1000;
+        font-size: 1.3em;
+        color: white;
+    }
+    
+    #video {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    #hello {
+        text-align: center;
+        font-weight: 1000;
+        font-size: 1.4em;
+        background-image: url(../image/Ramesses_4-Egypt-Jakub-Kyncl-large1.jpg);
+        color: white;
+        height: 30px;
+    }
+    
+    #foot {
+        background-image: url(../image/desert1.jpg);
+        text-align: center;
+        color: black;
+        height: 50px;
+        padding-top: 10px;
+        font-size: 1.1em;
+    }
+    
+    #copy {
+        color: white;
+    }
+    
+    #banner {
+        background-image: url(../image/karnak2.jpg);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #bannertext {
+        color: white;
+        font-size: 1.2em;
+        margin-right: 20px;
+        transform: translate (50%, 50%);
+        animation: move 2s ease infinite;
+        font-weight: 100px;
+    }
+    
+    @keyframes move {
+        50% {
+            text-shadow: 0 0 30px;
+            transform: translateY(20px);
+        }
+    }
+    
+    #select {
+        margin-top: 50px;
+    }
+    
+    #option {
+        font-size: 0;
+    }
+    
+    #option1 {
+        font-weight: 1000;
+        text-align: center;
+    }
+    
+    .form-select {
+        font-size: 1.2em;
+        background-color: #f0eaea;
+        border: 1px solid;
+    }
+    
+    #audio {
+        display: none;
+    }

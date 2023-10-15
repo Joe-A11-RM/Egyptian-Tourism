@@ -1,0 +1,455 @@
+#leftgod {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: -50px;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+#rightgod {
+    text-align: right;
+    margin-top: -198px;
+    margin-right: -5px;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#egypt {
+    text-align: center;
+    margin-top: -158px;
+    margin-right: 28px;
+}
+
+.animated {
+    transform: rotateY(150deg);
+}
+
+.navbar {
+    background-image: url(../image/black\ wall.jpg);
+}
+
+.navbar:hover {
+    background-image: url(../image/egypt-abydos-temple-of-osiris3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-link {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+    font-weight: 1000;
+}
+
+#firsttopic {
+    text-align: justify;
+    float: right;
+    max-width: 100%;
+    padding-top: 15px;
+    font-size: 1.1em;
+}
+
+#back {
+    background-color: #f0eaea;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#carousel {
+    max-width: 100%;
+    float: left;
+    text-align: left;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+
+/* OUTER CONTAINER */
+
+.tcontainer {
+    width: 100%;
+    overflow: hidden;
+    border-top-color: black;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    /* Hide scroll bar */
+}
+
+
+/* MIDDLE CONTAINER */
+
+.ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    /* Push contents to right side of screen */
+    background-image: url(../image/Ancient\ wall.png)
+}
+
+
+/* INNER CONTAINER */
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-move {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+}
+
+.ticker-move:hover {
+    animation-play-state: paused;
+    /* Pause scroll on mouse hover */
+}
+
+
+/* ITEMS */
+
+.ticker-item {
+    display: inline-block;
+    /* Lay items in a horizontal line */
+    padding: 0 2rem;
+    font-weight: 1000;
+    font-size: 1.3em;
+    color: white;
+}
+
+#hello {
+    text-align: center;
+    font-weight: 1000;
+    font-size: 1.4em;
+    background-image: url(../image/Ramesses_4-Egypt-Jakub-Kyncl-large1.jpg);
+    color: white;
+    height: 30px;
+}
+
+#foot {
+    background-image: url(../image/desert1.jpg);
+    text-align: center;
+    color: black;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+#copy {
+    color: white;
+}
+
+#banner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bannertext {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-right: 20px;
+    transform: translate (50%, 50%);
+    animation: move 2s ease infinite;
+    font-weight: 100px;
+}
+
+@keyframes move {
+    50% {
+        text-shadow: 0 0 30px;
+        transform: translateY(20px);
+    }
+}
+
+#select {
+    margin-top: 25px;
+}
+
+#option {
+    font-size: 0;
+}
+
+#option1 {
+    font-weight: 1000;
+    text-align: center;
+}
+
+.form-select {
+    font-size: 1.2em;
+    background-color: #f0eaea;
+    border: 1px solid;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.scene {
+    margin: 40px 0;
+    position: relative;
+    width: 210px;
+    height: 140px;
+    margin: 80px auto;
+    perspective: 1000px;
+}
+
+.carousel {
+    margin-top: 25px;
+    margin-right: -18px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carousel__cell {
+    position: absolute;
+    width: 190px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    border: 2px solid black;
+    line-height: 250px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+}
+
+.carousel__cell:hover {
+    font-size: 15px;
+}
+
+.carousel__cell:nth-child(9n+1) {
+    background-image: url(../image/luxor\ museum1.jpg);
+}
+
+.carousel__cell:nth-child(9n+2) {
+    background-image: url(../image/sharm1.jpg);
+}
+
+.carousel__cell:nth-child(9n+3) {
+    background-image: url(../image/elmmathaf\ kbeer1.jpg);
+}
+
+.carousel__cell:nth-child(9n+4) {
+    background-image: url(../image/matrouh1.jpg);
+}
+
+.carousel__cell:nth-child(9n+5) {
+    background-image: url(../image/kasr\ abden1.jpg);
+}
+
+.carousel__cell:nth-child(9n+6) {
+    background-image: url(../image/Tal\ Basta1.jpg);
+}
+
+.carousel__cell:nth-child(9n+7) {
+    background-image: url(../image/mthaf1.jpg);
+}
+
+.carousel__cell:nth-child(9n+8) {
+    background-image: url(../image/nowba\ museum1.jpg);
+}
+
+.carousel__cell:nth-child(9n+0) {
+    background-image: url(../image/mktbaalex1.jpg);
+}
+
+.carousel__cell:nth-child(1) {
+    transform: rotateY( 0deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(2) {
+    transform: rotateY( 40deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(3) {
+    transform: rotateY( 80deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(4) {
+    transform: rotateY(120deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(5) {
+    transform: rotateY(160deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(6) {
+    transform: rotateY(200deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(7) {
+    transform: rotateY(240deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(8) {
+    transform: rotateY(280deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(9) {
+    transform: rotateY(320deg) translateZ(288px);
+}
+
+.carousel-options {
+    text-align: center;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#move {
+    color: white;
+    font-weight: 500;
+}
+
+.radio-group {
+    text-align: center;
+}
+
+.cells-range {
+    margin-top: 45px;
+}
+
+.scene {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    perspective: 400px;
+}
+
+.cube {
+    margin-top: 25px;
+    margin-right: -18px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+    transition: transform 1s;
+    text-align: center;
+}
+
+.cube.show-front {
+    transform: translateZ(-100px) rotateY( 0deg);
+}
+
+.cube.show-right {
+    transform: translateZ(-100px) rotateY( -90deg);
+}
+
+.cube.show-back {
+    transform: translateZ(-100px) rotateY(-180deg);
+}
+
+.cube.show-left {
+    transform: translateZ(-100px) rotateY( 90deg);
+}
+
+.cube.show-top {
+    transform: translateZ(-100px) rotateX( -90deg);
+}
+
+.cube.show-bottom {
+    transform: translateZ(-100px) rotateX( 90deg);
+}
+
+.cube__face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    line-height: 430px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.cube__face--front {
+    background-image: url(../image/pyramids.jpg);
+}
+
+.cube__face--right {
+    background-image: url(../image/simple.jpg);
+}
+
+.cube__face--back {
+    background-image: url(../image/fila.jpg);
+}
+
+.cube__face--left {
+    background-image: url(../image/hatshpsot.jpg);
+}
+
+.cube__face--top {
+    background-image: url(../image/swari.jpg);
+}
+
+.cube__face--bottom {
+    background-image: url(../image/ramasiom.jpg);
+}
+
+.cube__face--front {
+    transform: rotateY( 0deg) translateZ(100px);
+}
+
+.cube__face--right {
+    transform: rotateY( 90deg) translateZ(100px);
+}
+
+.cube__face--back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube__face--left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube__face--top {
+    transform: rotateX( 90deg) translateZ(100px);
+}
+
+.cube__face--bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+label {
+    margin-right: 10px;
+    color: white;
+}
